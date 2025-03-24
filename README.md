@@ -13,3 +13,11 @@ https://module-federation.io/practice/frameworks/react/using-nx-for-react.html
 5. Add next remote - npx nx g @nx/react:remote apps/login --host=shop
 6. Open app - http://localhost:4200/
 7. Experiment
+
+# Important topics
+
+1. Iframe vs Module Federation
+2. Style leaking
+3. Commonication between apps
+4. Routing
+5. Deploying only affected apps

@@ -1,5 +1,5 @@
 {
-  "name": "remote",
+  "name": "remote-angular",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular",
@@ -53,12 +53,16 @@
           "vendorChunk": true,
           "extractLicenses": false,
           "sourceMap": true,
-          "namedChunks": true
+          "namedChunks": true,
+          "customWebpackConfig": {
+            "path": "apps/remote/webpack.prod.config.ts"
+          }
         }
       },
       "defaultConfiguration": "production"
     },
     "serve": {
+      "builder": "@angular-builders/custom-webpack:dev-server",
       "executor": "@nx/angular:dev-server",
       "options": {
         "port": 4201,

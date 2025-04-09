@@ -1,9 +1,9 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
-  name: 'remote',
+  name: 'remote-angular',
   exposes: {
-    './Component': 'apps/remote/src/app/remote-entry/entry.component.ts',
+    './Module': 'apps/remote/src/app/remote-entry/entry.module.ts',
   },
 };
 

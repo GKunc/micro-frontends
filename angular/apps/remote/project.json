@@ -62,18 +62,17 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "builder": "@angular-builders/custom-webpack:dev-server",
       "executor": "@nx/angular:dev-server",
       "options": {
-        "port": 4201,
+        "port": 4203,
         "publicHost": "http://localhost:4201"
       },
       "configurations": {
         "production": {
-          "buildTarget": "remote:build:production"
+          "buildTarget": "remote-angular:build:production"
         },
         "development": {
-          "buildTarget": "remote:build:development"
+          "buildTarget": "remote-angular:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -91,16 +90,16 @@
       "executor": "@nx/web:file-server",
       "defaultConfiguration": "production",
       "options": {
-        "buildTarget": "remote:build",
-        "port": 4201,
+        "buildTarget": "remote-angular:build",
+        "port": 4203,
         "watch": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "remote:build:development"
+          "buildTarget": "remote-angular:build:development"
         },
         "production": {
-          "buildTarget": "remote:build:production"
+          "buildTarget": "remote-angular:build:production"
         }
       }
     }

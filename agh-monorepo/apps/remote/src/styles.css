@@ -3,6 +3,12 @@
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
 
-.wrapper-container {
+.header__container {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.remote__wrapper-container {
   background-color: red;
 }

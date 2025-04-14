@@ -24,6 +24,11 @@ const prodConfig: ModuleFederationConfig = {
    * ]
    */
   remotes: [['remote', 'http://localhost:4201/']],
+  shared: (packageName: string) => {
+    console.log('package', packageName)
+    if(packageName !== 'react' && packageName !==  'react-dom') return false;
+  },
+  
 };
 
 // Nx plugins for rspack to build config object from Nx options and context.

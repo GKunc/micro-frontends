@@ -28,7 +28,7 @@ http-server -p 4202 --cors -o dist/apps/remote
 # Important topics
 
 1. Iframe vs Module Federation
-2. Style leaking
-3. Commonication between apps
+2. Style leaking - classNames
+3. Commonication between apps - npm i react-bus
 4. Routing
 5. Deploying only affected apps

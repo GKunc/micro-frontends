@@ -14,6 +14,12 @@
   margin-bottom: 8px;
 }
 
-.shell__wrapper-container {
-  background-color: green;
+.grid {
+  display: flex;
+  gap: 4px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  width: 50%;
 }

@@ -5,6 +5,10 @@ import baseConfig from './module-federation.config';
 
 const config = {
   ...baseConfig,
+  externals: {
+    react: 'react',
+    'react-dom': 'react-dom',
+  },
 };
 
 // Nx plugins for rspack to build config object from Nx options and context.

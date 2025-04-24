@@ -1,4 +1,4 @@
-import { Component, OnInit, signal, ViewEncapsulation, WritableSignal } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, signal, ViewEncapsulation, WritableSignal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 const  MF_EVENT_NAME = 'test-mf';
@@ -6,10 +6,12 @@ const  MF_EVENT_NAME = 'test-mf';
 @Component({
   selector: 'angular-nx-welcome',
   imports: [CommonModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   template: `
     <div class="wrapper">
       <h1>Hello from Angular Remote</h1>
-      <div>Text from shell: {{test()}}</div>
+      <div>Text from angular remote: {{test()}}</div>
+      <library-button text="hi angular" color="yellow"></library-button>
     </div>
   `,
   styles: [],

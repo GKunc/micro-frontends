@@ -1,6 +1,7 @@
 import * as React from 'react';
 import NxWelcome from './nx-welcome';
 import { Link, Route, Routes } from 'react-router-dom';
+import 'component-lib';
 
 const Remote = React.lazy(() => import('remote/Module'));
 const RemoteAngular = React.lazy(() => import('./angular-remote'));
@@ -23,6 +24,8 @@ export function App() {
           <Link to="/grid">Grid</Link>
         </li>
       </ul>
+      {/* @ts-ignore */}
+      <library-button></library-button>
       <React.Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<NxWelcome title="shell" />} />

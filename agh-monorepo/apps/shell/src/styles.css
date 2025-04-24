@@ -5,6 +5,8 @@
 
 .wrapper {
   margin: 8px;
+  padding: 8px;
+  border: 1px solid black;
 }
 
 .header__container {
@@ -20,6 +22,5 @@
 }
 
 .grid-item {
-  border: 1px solid black;
   width: 50%;
 }

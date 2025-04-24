@@ -1,7 +1,7 @@
 import '../styles.css';
 export function NxWelcome({ title }: { title: string }) {
   return (
-    <div className="shell__wrapper-container">
+    <div className="wrapper">
       <h3>{title}</h3>
       <h1>Hello Shell</h1>
     </div>

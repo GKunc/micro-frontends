@@ -25,6 +25,14 @@ npx nx build remote
 npm install --global http-server
 http-server -p 4202 --cors -o dist/apps/remote
 
+# Library
+npx create-nx-workspace@latest library --preset=apps
+cd library
+npx nx add @nx/web
+nx g @nx/js:lib libs/component-lib --publishable --importPath=@agh/component-lib  
+nx build component-lib 
+
+
 # Important topics
 
 1. Iframe vs Module Federation
